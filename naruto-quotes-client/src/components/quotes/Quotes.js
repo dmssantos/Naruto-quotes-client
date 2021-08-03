@@ -2,10 +2,7 @@ import styled from 'styled-components';
 import { string } from 'prop-types';
 
 
-Quotes.prototype = {
-  quote: string,
-  speaker: string
-}
+
 export const Quotes = ({ quote, speaker }) => {
   return (
     <Wrapper>
@@ -14,6 +11,11 @@ export const Quotes = ({ quote, speaker }) => {
       <button>Quote No Jutsu</button>
     </Wrapper>
   )
+}
+
+Quotes.prototype = {
+  quote: string,
+  speaker: string
 }
 
 const Wrapper = styled.div`
